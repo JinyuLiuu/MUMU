@@ -1,4 +1,4 @@
-# MUMU Florence-2 / LFM2.5 Evaluation
+# MUMU Challenge 2026
 
 This repository provides the evaluation code and complete baseline results for
 four Florence-2 checkpoints and `LiquidAI/LFM2.5-VL-450M` on a balanced
@@ -8,7 +8,7 @@ four Florence-2 checkpoints and `LiquidAI/LFM2.5-VL-450M` on a balanced
 > unified challenge taxonomy, novel-category split, and efficiency coefficients
 > were not available when the evaluation was run.
 
-## MUMU Challenge 2026
+## Challenge Overview
 
 **Mobile Unified Multimodal Understanding Challenge**<br>
 **Theme:** Efficient Unified Multimodal Architectures for Mobile-Oriented
@@ -97,18 +97,18 @@ reports and run summaries are under `results/metrics/` and `results/summaries/`.
 Raw score is `0.3 * A + 0.4 * B + 0.3 * C`, before the unspecified MUMU
 efficiency factor. Task B uses label-aware mAP@[0.5:0.95].
 
-| Split | Model | Params | A Macro-F1 | B mAP | C composite | Raw score |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
-| Validation | Florence-2-base | 231.4M | 0.1947 | 0.0314 | 0.7138 | 0.2851 |
-| Validation | Florence-2-base-ft | 231.4M | 0.1589 | 0.0198 | 0.7031 | 0.2665 |
-| Validation | Florence-2-large | 776.5M | 0.1998 | 0.0357 | 0.7436 | **0.2973** |
-| Validation | Florence-2-large-ft | 770.2M | 0.1592 | 0.0189 | **0.7555** | 0.2820 |
-| Validation | LFM2.5-VL-450M | 448.7M | **0.4459** | 0.0037 | 0.5285 | 0.2938 |
-| Public test | Florence-2-base | 231.4M | 0.1555 | 0.0111 | 0.6657 | 0.2508 |
-| Public test | Florence-2-base-ft | 231.4M | 0.1195 | 0.0061 | 0.6489 | 0.2329 |
-| Public test | Florence-2-large | 776.5M | 0.1672 | **0.0138** | 0.6751 | 0.2582 |
-| Public test | Florence-2-large-ft | 770.2M | 0.1494 | 0.0063 | **0.6840** | 0.2526 |
-| Public test | LFM2.5-VL-450M | 448.7M | **0.3795** | 0.0016 | 0.5232 | **0.2715** |
+| Split | Model | Params | Eligibility | A Macro-F1 | B mAP | C composite | Raw score |
+| --- | --- | ---: | --- | ---: | ---: | ---: | ---: |
+| Validation | Florence-2-base | 231.4M | `≤0.5B` | 0.1947 | 0.0314 | 0.7138 | 0.2851 |
+| Validation | Florence-2-base-ft | 231.4M | `≤0.5B` | 0.1589 | 0.0198 | 0.7031 | 0.2665 |
+| Validation | LFM2.5-VL-450M | 448.7M | `≤0.5B` | **0.4459** | 0.0037 | 0.5285 | 0.2938 |
+| Validation | Florence-2-large | 776.5M | ![Over 0.5B](https://img.shields.io/badge/%3E0.5B-over_limit-lightgrey) | 0.1998 | 0.0357 | 0.7436 | **0.2973** |
+| Validation | Florence-2-large-ft | 770.2M | ![Over 0.5B](https://img.shields.io/badge/%3E0.5B-over_limit-lightgrey) | 0.1592 | 0.0189 | **0.7555** | 0.2820 |
+| Public test | Florence-2-base | 231.4M | `≤0.5B` | 0.1555 | 0.0111 | 0.6657 | 0.2508 |
+| Public test | Florence-2-base-ft | 231.4M | `≤0.5B` | 0.1195 | 0.0061 | 0.6489 | 0.2329 |
+| Public test | LFM2.5-VL-450M | 448.7M | `≤0.5B` | **0.3795** | 0.0016 | 0.5232 | **0.2715** |
+| Public test | Florence-2-large | 776.5M | ![Over 0.5B](https://img.shields.io/badge/%3E0.5B-over_limit-lightgrey) | 0.1672 | **0.0138** | 0.6751 | 0.2582 |
+| Public test | Florence-2-large-ft | 770.2M | ![Over 0.5B](https://img.shields.io/badge/%3E0.5B-over_limit-lightgrey) | 0.1494 | 0.0063 | **0.6840** | 0.2526 |
 
 Florence-2-large and large-ft exceed the challenge's 0.5B parameter limit and
 are comparison baselines only. LFM2.5 has the best public-test raw score and is
