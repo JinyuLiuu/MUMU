@@ -1,15 +1,5 @@
 # MUMU Challenge 2026
 
-This repository provides the evaluation code and complete baseline results for
-four Florence-2 checkpoints and `LiquidAI/LFM2.5-VL-450M` on a balanced
-6,000-image, three-task source-data evaluation split.
-
-> These are source-data proxy results, not official MUMU Challenge scores. The
-> unified challenge taxonomy, novel-category split, and efficiency coefficients
-> were not available when the evaluation was run.
-
-## Challenge Overview
-
 **Mobile Unified Multimodal Understanding Challenge**<br>
 **Theme:** Efficient Unified Multimodal Architectures for Mobile-Oriented
 Visual Understanding
