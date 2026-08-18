@@ -67,7 +67,7 @@ Generate a concise natural-language description for each input image.
 
 ### Proposed Validation and Public Test Composition
 
-The following balanced allocation is used to construct the validation and public test sets. Counts are image counts; the public test annotations remain hidden for evaluation.
+The following balanced allocation is used to construct the validation and public test sets. Counts are image counts; both split annotations are released for reproducible evaluation.
 
 | Task | Dataset | Validation | Public test |
 | --- | --- | ---: | ---: |
@@ -87,7 +87,7 @@ The following balanced allocation is used to construct the validation and public
 | **Task C subtotal** |  | **333** | **1,666** |
 | **Overall total** |  | **1,000** | **5,000** |
 
-This is a proposed sampling plan rather than a claim about the native splits of the source datasets. Images must be deduplicated against training data, labels must be mapped to the challenge taxonomy, and public test ground truth must not be released.
+This is a proposed sampling plan rather than a claim about the native splits of the source datasets. Images must be deduplicated against training data and labels must be mapped to the challenge taxonomy. Because public-test ground truth is released, this split is a reproducible benchmark rather than a blinded leaderboard test.
 
 ### Prepared Evaluation Data
 
@@ -96,14 +96,14 @@ The proposed split has been materialized under `/home/volume_shared/share_datase
 - Validation: 1,000 images.
 - Public test: 5,000 images.
 - Integrity: 6,000 unique SHA-256 hashes, no missing images, and no duplicate IDs.
-- Public manifests exclude ground truth; internal annotations retain it for local evaluation.
+- Validation and public-test manifests both include ground truth for local evaluation.
 
 Public distribution and reproducibility resources:
 
 - Evaluation images and public manifests: <https://huggingface.co/datasets/JinyuLiu/MUMU-Eval-6000>
 - China mirror: <https://hf-mirror.com/datasets/JinyuLiu/MUMU-Eval-6000>
 - Evaluation code and complete results: <https://github.com/JinyuLiuu/MUMU>
-- Public-test ground truth and all model weights are intentionally excluded from the GitHub repository.
+- Public-test ground truth is included in the Hugging Face dataset; all dataset files and model weights remain excluded from the GitHub repository.
 - Exact model revisions and download links are recorded in `docs/MODELS.md`; complete metrics are recorded in `docs/RESULTS.md`.
 
 ### Florence-2 Official-Style Source-Data Baselines

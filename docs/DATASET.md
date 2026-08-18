@@ -5,20 +5,20 @@ The 6,000-image public package is hosted at
 and mirrored at
 [hf-mirror.com](https://hf-mirror.com/datasets/JinyuLiu/MUMU-Eval-6000).
 No dataset files are stored in this GitHub repository.
-The verified upload revision is `6ef7d0aed8d7834c16cf9aeea80b88be86299a73`.
+The verified upload revision is `1dbd1e38f77f5e34b080746db4439537bd772ca0`.
 
 ## Public Package
 
 | Split | Images | Task A | Task B | Task C | Ground truth |
 | --- | ---: | ---: | ---: | ---: | --- |
 | Validation | 1,000 | 334 | 333 | 333 | Included |
-| Public test | 5,000 | 1,667 | 1,667 | 1,666 | Withheld |
+| Public test | 5,000 | 1,667 | 1,667 | 1,666 | Included |
 | Total | 6,000 | 2,001 | 2,000 | 1,999 | — |
 
 All 6,000 images have distinct SHA-256 values. The deterministic sampling seed
-is `20260817`. The public-test manifest contains IDs, task, source dataset,
-relative image path, dimensions, format, SHA-256, source ID, source split, and
-prompt, but no ground truth.
+is `20260817`. Both manifests contain IDs, task, source dataset, relative image
+path, dimensions, format, SHA-256, source ID, source split, prompt, and
+source-data ground truth.
 
 ```bash
 HF_ENDPOINT=https://hf-mirror.com \

@@ -86,13 +86,13 @@ python scripts/evaluate_florence2.py \
   --output ./predictions/florence2_base_official.metrics.json \
   --clip-model ./models/clip-vit-base-patch32 \
   --prediction-kind florence2 \
-  --splits valid
+  --splits valid public_test
 ```
 
 For LFM2.5, use `--prediction-kind small-vlm`. The public Hugging Face package
-does not contain public-test ground truth, so the command can only reproduce
-validation metrics without organizer-only annotations. The repository retains
-the original full metric reports for auditability.
+contains ground truth for both splits, so the command reproduces validation and
+public-test metrics. The repository retains the original full metric reports
+for auditability.
 
 ## Metric Policies
 

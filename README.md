@@ -78,9 +78,10 @@ memory, lower parameter count, and higher detection performance as tie-breakers.
 | Dataset construction and sources | [docs/DATASET.md](docs/DATASET.md) |
 
 The GitHub repository intentionally contains no images, dataset annotations, or
-model weights. Public-test ground truth is not released. Complete prediction
-files are stored as compressed JSONL under `results/predictions/`; full metric
-reports and run summaries are under `results/metrics/` and `results/summaries/`.
+model weights. Validation and public-test ground truth are distributed with the
+Hugging Face dataset. Complete prediction files are stored as compressed JSONL
+under `results/predictions/`; full metric reports and run summaries are under
+`results/metrics/` and `results/summaries/`.
 
 ## Main Results
 
@@ -133,9 +134,8 @@ python scripts/run_florence2_eval.py \
   --output ./predictions/florence2_base.jsonl
 ```
 
-The downloaded public dataset supports inference on all 6,000 images and local
-evaluation on validation. Recomputing the recorded public-test metrics requires
-the withheld organizer-only ground truth.
+The downloaded public dataset supports inference and local metric reproduction
+on all 6,000 validation and public-test images.
 
 ## Official Submission Format
 

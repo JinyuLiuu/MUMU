@@ -185,11 +185,8 @@ class EvalWriter:
             for row in records:
                 split = row["split"]
                 handles[split].write(json.dumps(row, ensure_ascii=True) + "\n")
-                public_row = {k: v for k, v in row.items() if k != "ground_truth"}
-                if split == "valid":
-                    public_row["ground_truth"] = row["ground_truth"]
                 handles[f"public_{split}"].write(
-                    json.dumps(public_row, ensure_ascii=True) + "\n"
+                    json.dumps(row, ensure_ascii=True) + "\n"
                 )
         finally:
             for handle in handles.values():
