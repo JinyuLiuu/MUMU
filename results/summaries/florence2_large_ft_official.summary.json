@@ -1,0 +1,20 @@
+{
+  "model": "/home/volume_shared/share_datasets/data_nvme/models/microsoft_Florence-2-large-ft",
+  "parameter_count": 770173952,
+  "dtype": "float32",
+  "device": "cuda",
+  "num_beams": 3,
+  "counts": {
+    "A": 2001,
+    "B": 2000,
+    "C": 1999
+  },
+  "task_seconds": {
+    "A": 1713.6143025010824,
+    "B": 1402.386807302013,
+    "C": 508.11844957619905
+  },
+  "total_seconds": 4080.861451867968,
+  "peak_memory_bytes": 3787504128,
+  "failures": []
+}

@@ -1,0 +1,24 @@
+{
+  "model": "/home/volume_shared/share_datasets/data_nvme/mumu_eval_v1/models/lfm2_5_vl_450m",
+  "model_type": "lfm2_vl",
+  "parameter_count": 448718848,
+  "transformers_version": "5.1.0",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "max_new_tokens": 64,
+  "counts": {
+    "C": 1999
+  },
+  "resumed_rows": 0,
+  "task_seconds": {
+    "C": 345.7666233498603
+  },
+  "total_seconds": 379.77949209325016,
+  "peak_memory_bytes": 1149445120,
+  "failures": [],
+  "notes": [
+    "Natural-language prompts replace Florence-2 task tokens.",
+    "No NMS, duplicate removal, confidence calibration, or custom filtering is applied.",
+    "Task B boxes are parsed only when the model returns JSON coordinates."
+  ]
+}

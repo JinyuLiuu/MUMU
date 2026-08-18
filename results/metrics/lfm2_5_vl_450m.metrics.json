@@ -1,0 +1,364 @@
+{
+  "scope": "source-data baseline; not an official MUMU challenge score",
+  "predictions": "/home/volume_shared/share_datasets/data_nvme/mumu_eval_v1/predictions/lfm2_5_vl_450m.jsonl",
+  "prediction_kind": "small-vlm",
+  "counts": {
+    "total": 6000,
+    "valid": 1000,
+    "public_test": 5000
+  },
+  "splits": {
+    "valid": {
+      "task_a": {
+        "overall": {
+          "macro_f1": 0.4459176165978873,
+          "classes": 39,
+          "images": 334,
+          "ground_truth_labels": 438,
+          "predicted_labels": 709,
+          "exact_set_accuracy": 0.25748502994011974
+        },
+        "by_dataset": {
+          "KonIQ-10k": {
+            "macro_f1": 0.6354705000440956,
+            "classes": 3,
+            "images": 67,
+            "ground_truth_labels": 67,
+            "predicted_labels": 122,
+            "exact_set_accuracy": 0.04477611940298507
+          },
+          "LIVE Challenge": {
+            "macro_f1": 0.6274077657725456,
+            "classes": 3,
+            "images": 67,
+            "ground_truth_labels": 67,
+            "predicted_labels": 118,
+            "exact_set_accuracy": 0.14925373134328357
+          },
+          "NUS-WIDE": {
+            "macro_f1": 0.38663190522788066,
+            "classes": 32,
+            "images": 66,
+            "ground_truth_labels": 170,
+            "predicted_labels": 268,
+            "exact_set_accuracy": 0.22727272727272727
+          },
+          "Places365": {
+            "macro_f1": 0.7831807780320366,
+            "classes": 4,
+            "images": 67,
+            "ground_truth_labels": 67,
+            "predicted_labels": 78,
+            "exact_set_accuracy": 0.6567164179104478
+          },
+          "SPAQ": {
+            "macro_f1": 0.7134206806337954,
+            "classes": 3,
+            "images": 67,
+            "ground_truth_labels": 67,
+            "predicted_labels": 117,
+            "exact_set_accuracy": 0.208955223880597
+          }
+        }
+      },
+      "task_b": {
+        "label_aware": {
+          "map_50_95": 0.003707229311541952,
+          "ap_50": 0.008960762371827078,
+          "ap_75": 0.002476951793891,
+          "recall_50": 0.01451841359773371,
+          "categories": 1117,
+          "ground_truth_boxes": 5648,
+          "predicted_boxes": 291,
+          "confidence_policy": "generation order, descending by 1e-6"
+        },
+        "class_agnostic": {
+          "map_50_95": 0.004265220872197335,
+          "ap_50": 0.012452791670919668,
+          "ap_75": 0.001479458290656652,
+          "recall_50": 0.02160056657223796,
+          "categories": 1,
+          "ground_truth_boxes": 5648,
+          "predicted_boxes": 291,
+          "confidence_policy": "generation order, descending by 1e-6"
+        },
+        "by_dataset": {
+          "LVIS": {
+            "label_aware": {
+              "map_50_95": 0.021671081581842395,
+              "ap_50": 0.04702608418736611,
+              "ap_75": 0.01530745179781136,
+              "recall_50": 0.02556818181818182,
+              "categories": 228,
+              "ground_truth_boxes": 1408,
+              "predicted_boxes": 108,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.011183867097817742,
+              "ap_50": 0.023713082899941992,
+              "ap_75": 0.011721861841356549,
+              "recall_50": 0.032670454545454544,
+              "categories": 1,
+              "ground_truth_boxes": 1408,
+              "predicted_boxes": 108,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          },
+          "Objects365": {
+            "label_aware": {
+              "map_50_95": 0.0077823568539105254,
+              "ap_50": 0.010196362101963622,
+              "ap_75": 0.007347607899563036,
+              "recall_50": 0.010869565217391304,
+              "categories": 146,
+              "ground_truth_boxes": 1656,
+              "predicted_boxes": 100,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.0027023047971903706,
+              "ap_50": 0.007316663869776808,
+              "ap_75": 0.001019219569015725,
+              "recall_50": 0.014492753623188406,
+              "categories": 1,
+              "ground_truth_boxes": 1656,
+              "predicted_boxes": 100,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          },
+          "Visual Genome": {
+            "label_aware": {
+              "map_50_95": 0.005028718341447405,
+              "ap_50": 0.00888354028773043,
+              "ap_75": 0.004480061265795088,
+              "recall_50": 0.010835913312693499,
+              "categories": 905,
+              "ground_truth_boxes": 2584,
+              "predicted_boxes": 83,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.010511066855899124,
+              "ap_50": 0.023206904242021896,
+              "ap_75": 0.009900990099009901,
+              "recall_50": 0.020123839009287926,
+              "categories": 1,
+              "ground_truth_boxes": 2584,
+              "predicted_boxes": 83,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          }
+        }
+      },
+      "task_c": {
+        "overall": {
+          "cider": 0.442897647202713,
+          "spice": 0.1884759637816529,
+          "clipscore": 0.8138548704954955,
+          "composite": 0.4778583091642297,
+          "images": 333
+        },
+        "by_dataset": {
+          "COCO Captions": {
+            "cider": 0.6164671782666337,
+            "clipscore": 0.8103489231418919,
+            "spice": 0.23030542582103417,
+            "images": 111
+          },
+          "Conceptual Captions": {
+            "cider": 0.22442423365855374,
+            "clipscore": 0.8034250070382883,
+            "spice": 0.10728838136508526,
+            "images": 111
+          },
+          "Flickr30k": {
+            "cider": 0.48780152968295204,
+            "clipscore": 0.8277906813063063,
+            "spice": 0.2278340841588393,
+            "images": 111
+          }
+        }
+      }
+    },
+    "public_test": {
+      "task_a": {
+        "overall": {
+          "macro_f1": 0.37950934522156726,
+          "classes": 63,
+          "images": 1667,
+          "ground_truth_labels": 2206,
+          "predicted_labels": 3504,
+          "exact_set_accuracy": 0.2501499700059988
+        },
+        "by_dataset": {
+          "KonIQ-10k": {
+            "macro_f1": 0.6058208504028938,
+            "classes": 3,
+            "images": 334,
+            "ground_truth_labels": 334,
+            "predicted_labels": 585,
+            "exact_set_accuracy": 0.03592814371257485
+          },
+          "LIVE Challenge": {
+            "macro_f1": 0.6177819720887668,
+            "classes": 3,
+            "images": 333,
+            "ground_truth_labels": 333,
+            "predicted_labels": 561,
+            "exact_set_accuracy": 0.06906906906906907
+          },
+          "NUS-WIDE": {
+            "macro_f1": 0.3276863257090187,
+            "classes": 52,
+            "images": 333,
+            "ground_truth_labels": 872,
+            "predicted_labels": 1303,
+            "exact_set_accuracy": 0.17117117117117117
+          },
+          "Places365": {
+            "macro_f1": 0.8176592560830847,
+            "classes": 8,
+            "images": 333,
+            "ground_truth_labels": 333,
+            "predicted_labels": 387,
+            "exact_set_accuracy": 0.7627627627627628
+          },
+          "SPAQ": {
+            "macro_f1": 0.6840158111950151,
+            "classes": 3,
+            "images": 334,
+            "ground_truth_labels": 334,
+            "predicted_labels": 572,
+            "exact_set_accuracy": 0.218562874251497
+          }
+        }
+      },
+      "task_b": {
+        "label_aware": {
+          "map_50_95": 0.001649077077844644,
+          "ap_50": 0.003937370084625758,
+          "ap_75": 0.0012841165555878093,
+          "recall_50": 0.01592539454806313,
+          "categories": 2939,
+          "ground_truth_boxes": 27880,
+          "predicted_boxes": 1514,
+          "confidence_policy": "generation order, descending by 1e-6"
+        },
+        "class_agnostic": {
+          "map_50_95": 0.007266028419012571,
+          "ap_50": 0.014145205801954039,
+          "ap_75": 0.006834812600291637,
+          "recall_50": 0.025215208034433285,
+          "categories": 1,
+          "ground_truth_boxes": 27880,
+          "predicted_boxes": 1514,
+          "confidence_policy": "generation order, descending by 1e-6"
+        },
+        "by_dataset": {
+          "LVIS": {
+            "label_aware": {
+              "map_50_95": 0.011952513504756056,
+              "ap_50": 0.026831016293715138,
+              "ap_75": 0.009789377917979406,
+              "recall_50": 0.026942843793801588,
+              "categories": 434,
+              "ground_truth_boxes": 6421,
+              "predicted_boxes": 546,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.00780751113883661,
+              "ap_50": 0.018700634108354656,
+              "ap_75": 0.00446034702480149,
+              "recall_50": 0.0389347453667653,
+              "categories": 1,
+              "ground_truth_boxes": 6421,
+              "predicted_boxes": 546,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          },
+          "Objects365": {
+            "label_aware": {
+              "map_50_95": 0.003730846404348708,
+              "ap_50": 0.008465693730945146,
+              "ap_75": 0.003026503523714817,
+              "recall_50": 0.010422979032844504,
+              "categories": 229,
+              "ground_truth_boxes": 8251,
+              "predicted_boxes": 501,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.0044959504119234245,
+              "ap_50": 0.00750952018278751,
+              "ap_75": 0.0049504950495049506,
+              "recall_50": 0.0150284813961944,
+              "categories": 1,
+              "ground_truth_boxes": 8251,
+              "predicted_boxes": 501,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          },
+          "Visual Genome": {
+            "label_aware": {
+              "map_50_95": 0.003014495649370427,
+              "ap_50": 0.006430131332113778,
+              "ap_75": 0.0022063790039292203,
+              "recall_50": 0.014006662628709872,
+              "categories": 2644,
+              "ground_truth_boxes": 13208,
+              "predicted_boxes": 467,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.013100197091919124,
+              "ap_50": 0.023905093212023908,
+              "ap_75": 0.01303112374017671,
+              "recall_50": 0.0249091459721381,
+              "categories": 1,
+              "ground_truth_boxes": 13208,
+              "predicted_boxes": 467,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          }
+        }
+      },
+      "task_c": {
+        "overall": {
+          "cider": 0.44996721359943365,
+          "spice": 0.18717592543308492,
+          "clipscore": 0.8146900850183824,
+          "composite": 0.48054668857521365,
+          "images": 1666
+        },
+        "by_dataset": {
+          "COCO Captions": {
+            "cider": 0.667286138828583,
+            "clipscore": 0.82451646104991,
+            "spice": 0.23224226367849343,
+            "images": 556
+          },
+          "Conceptual Captions": {
+            "cider": 0.2287813675772226,
+            "clipscore": 0.792895287865991,
+            "spice": 0.1043915447469018,
+            "images": 555
+          },
+          "Flickr30k": {
+            "cider": 0.4534425687614517,
+            "clipscore": 0.8266408009572072,
+            "spice": 0.22481276726440838,
+            "images": 555
+          }
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Task A uses an explicit source-data label vocabulary because the challenge taxonomy is unspecified.",
+    "Task B parses the model's normalized JSON boxes; generation order is used because it emits no confidence scores.",
+    "Task C CLIPScore uses OpenAI CLIP ViT-B/32 with max(2.5*cosine, 0).",
+    "The challenge taxonomy, novel split, alpha, and beta are not specified."
+  ]
+}

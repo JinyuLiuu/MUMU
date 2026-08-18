@@ -1,0 +1,363 @@
+{
+  "scope": "source-data baseline; not an official MUMU challenge score",
+  "predictions": "/home/volume_shared/share_datasets/data_nvme/mumu_eval_v1/predictions/florence2_large_ft_official.jsonl",
+  "counts": {
+    "total": 6000,
+    "valid": 1000,
+    "public_test": 5000
+  },
+  "splits": {
+    "valid": {
+      "task_a": {
+        "overall": {
+          "macro_f1": 0.15924449508826813,
+          "classes": 39,
+          "images": 334,
+          "ground_truth_labels": 438,
+          "predicted_labels": 239,
+          "exact_set_accuracy": 0.011976047904191617
+        },
+        "by_dataset": {
+          "KonIQ-10k": {
+            "macro_f1": 0.0,
+            "classes": 3,
+            "images": 67,
+            "ground_truth_labels": 67,
+            "predicted_labels": 0,
+            "exact_set_accuracy": 0.0
+          },
+          "LIVE Challenge": {
+            "macro_f1": 0.0,
+            "classes": 3,
+            "images": 67,
+            "ground_truth_labels": 67,
+            "predicted_labels": 0,
+            "exact_set_accuracy": 0.0
+          },
+          "NUS-WIDE": {
+            "macro_f1": 0.3291509432784677,
+            "classes": 32,
+            "images": 66,
+            "ground_truth_labels": 170,
+            "predicted_labels": 71,
+            "exact_set_accuracy": 0.015151515151515152
+          },
+          "Places365": {
+            "macro_f1": 0.1111111111111111,
+            "classes": 4,
+            "images": 67,
+            "ground_truth_labels": 67,
+            "predicted_labels": 4,
+            "exact_set_accuracy": 0.05970149253731343
+          },
+          "SPAQ": {
+            "macro_f1": 0.0,
+            "classes": 3,
+            "images": 67,
+            "ground_truth_labels": 67,
+            "predicted_labels": 0,
+            "exact_set_accuracy": 0.0
+          }
+        }
+      },
+      "task_b": {
+        "label_aware": {
+          "map_50_95": 0.01885077789334208,
+          "ap_50": 0.02491201659645199,
+          "ap_75": 0.020260340821266036,
+          "recall_50": 0.07418555240793201,
+          "categories": 1117,
+          "ground_truth_boxes": 5648,
+          "predicted_boxes": 2732,
+          "confidence_policy": "generation order, descending by 1e-6"
+        },
+        "class_agnostic": {
+          "map_50_95": 0.03979636792450054,
+          "ap_50": 0.06067370285484432,
+          "ap_75": 0.040487830343084334,
+          "recall_50": 0.14978753541076487,
+          "categories": 1,
+          "ground_truth_boxes": 5648,
+          "predicted_boxes": 2732,
+          "confidence_policy": "generation order, descending by 1e-6"
+        },
+        "by_dataset": {
+          "LVIS": {
+            "label_aware": {
+              "map_50_95": 0.0850294295518703,
+              "ap_50": 0.10479740056104273,
+              "ap_75": 0.09141886130745101,
+              "recall_50": 0.13849431818181818,
+              "categories": 228,
+              "ground_truth_boxes": 1408,
+              "predicted_boxes": 1024,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.08730416603582153,
+              "ap_50": 0.12740500304106656,
+              "ap_75": 0.08956534971111994,
+              "recall_50": 0.26136363636363635,
+              "categories": 1,
+              "ground_truth_boxes": 1408,
+              "predicted_boxes": 1024,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          },
+          "Objects365": {
+            "label_aware": {
+              "map_50_95": 0.005193539080131209,
+              "ap_50": 0.010109458796890448,
+              "ap_75": 0.003956841788437197,
+              "recall_50": 0.024154589371980676,
+              "categories": 146,
+              "ground_truth_boxes": 1656,
+              "predicted_boxes": 1035,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.0017891332600809226,
+              "ap_50": 0.005852566333526625,
+              "ap_75": 0.0008177157001414427,
+              "recall_50": 0.041666666666666664,
+              "categories": 1,
+              "ground_truth_boxes": 1656,
+              "predicted_boxes": 1035,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          },
+          "Visual Genome": {
+            "label_aware": {
+              "map_50_95": 0.029784519014885324,
+              "ap_50": 0.03824105606755352,
+              "ap_75": 0.03335944959726869,
+              "recall_50": 0.07120743034055728,
+              "categories": 905,
+              "ground_truth_boxes": 2584,
+              "predicted_boxes": 673,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.08788070030916524,
+              "ap_50": 0.12153906042487193,
+              "ap_75": 0.09566115353503495,
+              "recall_50": 0.15828173374613003,
+              "categories": 1,
+              "ground_truth_boxes": 2584,
+              "predicted_boxes": 673,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          }
+        }
+      },
+      "task_c": {
+        "overall": {
+          "cider": 1.1522363105864977,
+          "spice": 0.20465635496092957,
+          "clipscore": 0.777246973536036,
+          "composite": 0.7554655227836888,
+          "images": 333
+        },
+        "by_dataset": {
+          "COCO Captions": {
+            "cider": 1.5711739717692128,
+            "clipscore": 0.7606762035472973,
+            "spice": 0.25594657448844066,
+            "images": 111
+          },
+          "Conceptual Captions": {
+            "cider": 0.7613525496097713,
+            "clipscore": 0.7898631052927928,
+            "spice": 0.15266771830306622,
+            "images": 111
+          },
+          "Flickr30k": {
+            "cider": 1.1241824103805094,
+            "clipscore": 0.7812016117680181,
+            "spice": 0.20535477209128178,
+            "images": 111
+          }
+        }
+      }
+    },
+    "public_test": {
+      "task_a": {
+        "overall": {
+          "macro_f1": 0.14940990673690935,
+          "classes": 63,
+          "images": 1667,
+          "ground_truth_labels": 2206,
+          "predicted_labels": 1793,
+          "exact_set_accuracy": 0.01199760047990402
+        },
+        "by_dataset": {
+          "KonIQ-10k": {
+            "macro_f1": 0.0,
+            "classes": 3,
+            "images": 334,
+            "ground_truth_labels": 334,
+            "predicted_labels": 0,
+            "exact_set_accuracy": 0.0
+          },
+          "LIVE Challenge": {
+            "macro_f1": 0.0,
+            "classes": 3,
+            "images": 333,
+            "ground_truth_labels": 333,
+            "predicted_labels": 0,
+            "exact_set_accuracy": 0.0
+          },
+          "NUS-WIDE": {
+            "macro_f1": 0.31356015423089584,
+            "classes": 52,
+            "images": 333,
+            "ground_truth_labels": 872,
+            "predicted_labels": 381,
+            "exact_set_accuracy": 0.03003003003003003
+          },
+          "Places365": {
+            "macro_f1": 0.1632054121725732,
+            "classes": 8,
+            "images": 333,
+            "ground_truth_labels": 333,
+            "predicted_labels": 27,
+            "exact_set_accuracy": 0.08108108108108109
+          },
+          "SPAQ": {
+            "macro_f1": 0.0,
+            "classes": 3,
+            "images": 334,
+            "ground_truth_labels": 334,
+            "predicted_labels": 0,
+            "exact_set_accuracy": 0.0
+          }
+        }
+      },
+      "task_b": {
+        "label_aware": {
+          "map_50_95": 0.006308485808138228,
+          "ap_50": 0.008549189384828775,
+          "ap_75": 0.006696232166207932,
+          "recall_50": 0.07769010043041606,
+          "categories": 2939,
+          "ground_truth_boxes": 27880,
+          "predicted_boxes": 13617,
+          "confidence_policy": "generation order, descending by 1e-6"
+        },
+        "class_agnostic": {
+          "map_50_95": 0.040943380885191706,
+          "ap_50": 0.06520213598247018,
+          "ap_75": 0.041326168807111735,
+          "recall_50": 0.1475251076040172,
+          "categories": 1,
+          "ground_truth_boxes": 27880,
+          "predicted_boxes": 13617,
+          "confidence_policy": "generation order, descending by 1e-6"
+        },
+        "by_dataset": {
+          "LVIS": {
+            "label_aware": {
+              "map_50_95": 0.04992268688627078,
+              "ap_50": 0.06386739367954722,
+              "ap_75": 0.05275422335063455,
+              "recall_50": 0.1481077713751752,
+              "categories": 434,
+              "ground_truth_boxes": 6421,
+              "predicted_boxes": 3757,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.0910027327671705,
+              "ap_50": 0.13652333576877518,
+              "ap_75": 0.09413779753169228,
+              "recall_50": 0.25105123812490265,
+              "categories": 1,
+              "ground_truth_boxes": 6421,
+              "predicted_boxes": 3757,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          },
+          "Objects365": {
+            "label_aware": {
+              "map_50_95": 0.007018315610807966,
+              "ap_50": 0.01916824562448923,
+              "ap_75": 0.0047163285227045226,
+              "recall_50": 0.037813598351714946,
+              "categories": 229,
+              "ground_truth_boxes": 8251,
+              "predicted_boxes": 6089,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.0036118225199571244,
+              "ap_50": 0.010219396532010235,
+              "ap_75": 0.0021128802069396127,
+              "recall_50": 0.05853835898678948,
+              "categories": 1,
+              "ground_truth_boxes": 8251,
+              "predicted_boxes": 6089,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          },
+          "Visual Genome": {
+            "label_aware": {
+              "map_50_95": 0.010969014113462808,
+              "ap_50": 0.014388893687449196,
+              "ap_75": 0.012072942295347276,
+              "recall_50": 0.06836765596608116,
+              "categories": 2644,
+              "ground_truth_boxes": 13208,
+              "predicted_boxes": 3771,
+              "confidence_policy": "generation order, descending by 1e-6"
+            },
+            "class_agnostic": {
+              "map_50_95": 0.07908505226037672,
+              "ap_50": 0.1182090559957237,
+              "ap_75": 0.08470341298138252,
+              "recall_50": 0.152786190187765,
+              "categories": 1,
+              "ground_truth_boxes": 13208,
+              "predicted_boxes": 3771,
+              "confidence_policy": "generation order, descending by 1e-6"
+            }
+          }
+        }
+      },
+      "task_c": {
+        "overall": {
+          "cider": 0.9865266630572946,
+          "spice": 0.19443663119362628,
+          "clipscore": 0.7702877049257203,
+          "composite": 0.6840279660587218,
+          "images": 1666
+        },
+        "by_dataset": {
+          "COCO Captions": {
+            "cider": 1.5547849952475992,
+            "clipscore": 0.7829431767086331,
+            "spice": 0.25909407218991615,
+            "images": 556
+          },
+          "Conceptual Captions": {
+            "cider": 0.4960151987789996,
+            "clipscore": 0.7572107263513513,
+            "spice": 0.1298330067691579,
+            "images": 555
+          },
+          "Flickr30k": {
+            "cider": 0.9077559062584561,
+            "clipscore": 0.7706864090653153,
+            "spice": 0.19426631472811787,
+            "images": 555
+          }
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Task A uses strict lexical extraction from detailed captions because Florence-2 has no tagging head.",
+    "Task B novel categories are unspecified and Florence-2 OD emits no confidence scores.",
+    "Task C CLIPScore uses OpenAI CLIP ViT-B/32 with max(2.5*cosine, 0).",
+    "The challenge taxonomy, novel split, alpha, and beta are not specified."
+  ]
+}

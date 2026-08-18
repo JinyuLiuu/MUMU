@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv*/
+venv*/
+
+# Evaluation data and model weights live on Hugging Face.
+data/
+datasets
+models/
+weights/
+mumu_eval_v1/
+annotations/
+images/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Local inference outputs. Curated compressed results are tracked explicitly.
+predictions/
+outputs/
+*.part
+!results/predictions/
+!results/predictions/*.jsonl.gz
+
+# Local third-party reference checkout; upstream is linked in the docs.
+third_party/
